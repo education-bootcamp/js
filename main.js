@@ -7,14 +7,12 @@ sum=()=>{
 function calculate(exp) {
     let tempValue=document.
     getElementById('textInput').value;
+    if (isNaN(tempValue) || tempValue===''){
+        alert('Please enter a valid number');
+        return;
+    }
     if (number1===0){
-        if (tempValue!==''){
            number1=tempValue;
-        }else{
-            alert('please insert a number');
-            return;
-        }
-
     }
     console.log(exp, number1);
 }
