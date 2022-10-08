@@ -24,19 +24,25 @@ function calculate(exp) {
 
     switch (exp) {
         case '+':
-            console.log(number1+number2);
+            document.getElementById('textInput').value=`${number1} ${exp} ${number2} = ${number1+number2}`;
             break;
         case '-':
-            console.log(number1-number2);
+            document.getElementById('textInput').value=`${number1} ${exp} ${number2} = ${number1-number2}`;
             break;
         case '*':
-            console.log(number1*number2);
+            document.getElementById('textInput').value=`${number1} ${exp} ${number2} = ${number1*number2}`;
             break;
         case '/':
-            console.log(number1/number2);
+            document.getElementById('textInput').value=`${number1} ${exp} ${number2} = ${number1/number2}`;
             break;
         case '%':
-            console.log(number1%number2);
+            document.getElementById('textInput').value=`${number1} ${exp} ${number2} = ${number1%number2}`;
     }
 
+}
+
+refresh=()=>{
+    number1=0;
+    number1=0;
+    document.getElementById('textInput').value='';
 }
